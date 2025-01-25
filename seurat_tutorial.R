@@ -9,7 +9,7 @@ library(patchwork)
 library(ggplot2)
 
 # DATASET INITIALIZATION
-pbmc.data <- Read10X(data.dir = "/Users/eunicelee153/Desktop/WORK/CLINICAL/Angelo Lab/DCIS Project/filtered_gene_bc_matrices/hg19")
+pbmc.data <- Read10X(data.dir = "DCIS Project/filtered_gene_bc_matrices/hg19")
 
 pbmc <- CreateSeuratObject(counts = pbmc.data, project = "pbmc3k", min.cells = 3, min.features = 200)
 pbmc
