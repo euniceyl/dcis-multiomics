@@ -8,7 +8,7 @@ library(dplyr)
 
 ### DATASET INITIALIZATION ###
 
-immune_cells = readRDS("/Users/eunicelee153/Desktop/WORK/CLINICAL/Angelo Lab/DCIS Project/IMMrev.rds")
+immune_cells = readRDS("DCIS Project/IMMrev.rds")
 dcis_immune <- subset(immune_cells, subset = orig.ident %in% c("DCIS1", "DCIS2","DCIS3","DCIS4","DCIS5","DCIS6","DCIS7"))
 
 ### QUALITY CONTROL, NORMALIZATION, SCALING ###
